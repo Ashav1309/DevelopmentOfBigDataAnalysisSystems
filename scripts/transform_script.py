@@ -38,6 +38,6 @@ def transfrom(profit_table, date):
     return df_tmp
 
 if __name__ == "__main__":
-    profit_data = pd.read_csv('profit_table.csv')
+    profit_data = pd.read_csv('./data/profit_table.csv')
     flags_activity = transfrom(profit_data, '2024-03-01')
-    flags_activity.to_csv('flags_activity.csv', index=False)
+    flags_activity.to_csv('./data/flags_activity.csv', index=False)
